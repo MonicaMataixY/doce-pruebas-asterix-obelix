@@ -1,0 +1,108 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.lira_container {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lira {
+    width: 100vh;
+    height: 100vh; 
+}
+
+.buttons {
+    position: absolute;
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.nota {
+    z-index: 1;
+    background-color: #26303D;
+    border: 1px solid #26303D;
+    width: 10px;
+    height: 350px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+/*aquí hago las medidas en responsive*/
+@media  screen and (max-width: 550px) {
+    
+    .lira {
+        width: 80vh;
+        height: 80vh; 
+    }
+    
+    .buttons {
+        width: 80%;  
+    }
+    
+    .nota {
+        height: 300px;
+        margin: 6px;
+    }
+
+}
+
+@media  screen and (max-width: 380px) {
+    
+    .lira {
+        width: 60vh;
+        height: 60vh; 
+    }
+    
+    .buttons {
+        width: 60%; 
+    }
+    
+    .nota {
+        height: 210px;
+        margin: 4px;
+    }
+
+}
+
+@media  screen and (max-width: 280px) {
+    
+    .lira {
+        width: 40vh;
+        height: 40vh; 
+    }
+    
+    .buttons {
+        width: 40%; 
+    }
+    
+    .nota {
+        height: 150px;
+        margin: 3px;
+    }
+
+}
+
+@media  screen and (max-width: 190px) {
+    
+    .lira {
+        width: 30vh;
+        height: 30vh; 
+    }
+    
+    .buttons {
+        width: 30%; 
+    }
+    
+    .nota {
+        height: 110px;
+        margin: 1px;
+    }
+
+}
