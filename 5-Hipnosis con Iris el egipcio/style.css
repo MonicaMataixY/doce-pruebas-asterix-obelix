@@ -1,0 +1,108 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container_Iris {
+    border: solid 5px yellow;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.imagen_Iris {  
+    width: 100%;
+    height: 100%;
+    opacity: 100%; 
+}
+
+.objetosBrillantes_container{
+   height: 0;
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   top: 60%;
+   left: 35%;
+}
+
+.objetoBrillante{
+    border-radius: 50%;
+    width: 150px;
+    height: 0px;
+    background-color: rgba(234, 242, 9, 0);
+   
+  }
+
+#boton {
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: yellow;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-family: "Sigmar", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 50%;
+}
+
+.bocadillo{
+    position: absolute;
+    width: 25%;
+    z-index: 1;
+    top: 0;
+    left: 60%;
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.brillar {
+    box-shadow:  0 0 30px 5px rgba(242, 255, 0, 0.7); 
+  }
+
+  @keyframes brillo {
+    0% {
+      box-shadow: 0 0 10px 20px rgb(247, 255, 1); /* Inicia con una sombra */
+      filter: brightness(1); /* Inicia con el brillo normal */
+    }
+    100% {
+      box-shadow: 0 0 30px 50px rgb(246, 255, 0); /* Termina con una sombra más grande */
+      filter: brightness(2); /* Incrementa el brillo */
+    }
+  }
+
+
+
+@media  screen and (max-width: 700px) {
+    
+    .bocadillo{
+        top: 10%;
+        left: 70%;
+    }
+
+}
+
+@media  screen and (max-width: 430px) {
+    
+    .bocadillo{
+        top: 30%;
+        left: 80%;
+    }
+
+}
